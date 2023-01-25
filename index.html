@@ -15,28 +15,26 @@
     </header>
 
     <div class="container">
-        <div class="row">
-            <h2>Location:</h2>
-            <input class= "cityInput" type="text" placeholder="Enter Location"/>
+        <div class="row mt-4 col-md-3">
+            <h2 id="today"></h2>
+            <input class= "cityInput" type="text" placeholder="Enter a city here"/>
             <button class="btn my-2 w-50 btn-primary" id="searchBtn">Search</button>
         </div>
     </div>
-    
 
-    <div id="currentWeather">
+    <div id="currentTemp">
     </div>
 
-    <!-- WIP <div id="five-day">
-        <ul>
-            <li class="day-1"></li>
-            <li class="day-2"></li>
-            <li class="day-3"></li>
-            <li class="day-4"></li>
-            <li class="day-5"></li>
-        </ul>
-    </div> -->
+    <!-- forecast for 5 days out -->
+    <div id="forecastEd">
+        <h3></h3>
+        <div class="col-md-2 row mt-4 forecast-1"></div>
+        <div class="col-md-2 row mt-4 forecast-2"></div>
+        <div class="col-md-2 row mt-4 forecast-3"></div>
+        <div class="col-md-2 row mt-4 forecast-4"></div>
+        <div class="col-md-2 row mt-4 forecast-5"></div>
+    </div>
 
-    <!-- need: current weather and div for each day for 5-day forecast -->
     <!-- <div id="citynameheader">
     </div> -->
     <script src="assets\js\script.js"></script>    
