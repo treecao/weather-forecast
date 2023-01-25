@@ -46,44 +46,44 @@ function weatherForecast(forecastData) {
     let currentHTML = `
     <h3>5-Day Forecast: <h3>
     
-    <p>${new Date(forecastData.list[6].dt_txt).toLocaleDateString()}</p>
-    <img src="http://openweathermap.org/img/wn/${forecastData.list[6].weather[0].icon}@2x.png" alt="">
-    <p>Temp: ${forecastData.list[6].main.temp} °F</p>
-    <p>Humidity: ${forecastData.list[6].main.humidity} %</p>
-    <p>Wind Speed: ${forecastData.list[6].wind.speed} mps</p>
+    <p>${new Date(forecastData.list[3].dt_txt).toLocaleDateString()}</p>
+    <img src="http://openweathermap.org/img/wn/${forecastData.list[3].weather[0].icon}@2x.png" alt="">
+    <p>Temp: ${forecastData.list[3].main.temp} °F</p>
+    <p>Humidity: ${forecastData.list[3].main.humidity} %</p>
+    <p>Wind Speed: ${forecastData.list[3].wind.speed} mps</p>
     `
     forecastOne.innerHTML = currentHTML;
 
     currentHTML= 
-    `<p>${new Date(forecastData.list[17].dt_txt).toLocaleDateString()}</p>
-    <img src="http://openweathermap.org/img/wn/${forecastData.list[17].weather[0].icon}@2x.png" alt="">
-    <p>Temp: ${forecastData.list[17].main.temp} °F</p>
-    <p>Humidity: ${forecastData.list[17].main.humidity} %</p>
-    <p>Wind Speed: ${forecastData.list[17].wind.speed} mps</p>`
+    `<p>${new Date(forecastData.list[11].dt_txt).toLocaleDateString()}</p>
+    <img src="http://openweathermap.org/img/wn/${forecastData.list[11].weather[0].icon}@2x.png" alt="">
+    <p>Temp: ${forecastData.list[11].main.temp} °F</p>
+    <p>Humidity: ${forecastData.list[11].main.humidity} %</p>
+    <p>Wind Speed: ${forecastData.list[11].wind.speed} mps</p>`
     forecastTwo.innerHTML = currentHTML;
 
     currentHTML= 
-    `<p>${new Date(forecastData.list[17].dt_txt).toLocaleDateString()}</p>
-    <img src="http://openweathermap.org/img/wn/${forecastData.list[17].weather[0].icon}@2x.png" alt="">
-    <p>Temp: ${forecastData.list[17].main.temp} °F</p>
-    <p>Humidity: ${forecastData.list[17].main.humidity} %</p>
-    <p>Wind Speed: ${forecastData.list[17].wind.speed} mps</p>`
+    `<p>${new Date(forecastData.list[19].dt_txt).toLocaleDateString()}</p>
+    <img src="http://openweathermap.org/img/wn/${forecastData.list[19].weather[0].icon}@2x.png" alt="">
+    <p>Temp: ${forecastData.list[19].main.temp} °F</p>
+    <p>Humidity: ${forecastData.list[19].main.humidity} %</p>
+    <p>Wind Speed: ${forecastData.list[19].wind.speed} mps</p>`
     forecastThree.innerHTML = currentHTML;
 
     currentHTML= 
-    `<p>${new Date(forecastData.list[17].dt_txt).toLocaleDateString()}</p>
-    <img src="http://openweathermap.org/img/wn/${forecastData.list[17].weather[0].icon}@2x.png" alt="">
-    <p>Temp: ${forecastData.list[17].main.temp} °F</p>
-    <p>Humidity: ${forecastData.list[17].main.humidity} %</p>
-    <p>Wind Speed: ${forecastData.list[17].wind.speed} mps</p>`
+    `<p>${new Date(forecastData.list[27].dt_txt).toLocaleDateString()}</p>
+    <img src="http://openweathermap.org/img/wn/${forecastData.list[27].weather[0].icon}@2x.png" alt="">
+    <p>Temp: ${forecastData.list[27].main.temp} °F</p>
+    <p>Humidity: ${forecastData.list[27].main.humidity} %</p>
+    <p>Wind Speed: ${forecastData.list[27].wind.speed} mps</p>`
     forecastFour.innerHTML = currentHTML;
 
     currentHTML= 
-    `<p>${new Date(forecastData.list[17].dt_txt).toLocaleDateString()}</p>
-    <img src="http://openweathermap.org/img/wn/${forecastData.list[17].weather[0].icon}@2x.png" alt="">
-    <p>Temp: ${forecastData.list[17].main.temp} °F</p>
-    <p>Humidity: ${forecastData.list[17].main.humidity} %</p>
-    <p>Wind Speed: ${forecastData.list[17].wind.speed} mps</p>`
+    `<p>${new Date(forecastData.list[35].dt_txt).toLocaleDateString()}</p>
+    <img src="http://openweathermap.org/img/wn/${forecastData.list[35].weather[0].icon}@2x.png" alt="">
+    <p>Temp: ${forecastData.list[35].main.temp} °F</p>
+    <p>Humidity: ${forecastData.list[35].main.humidity} %</p>
+    <p>Wind Speed: ${forecastData.list[35].wind.speed} mps</p>`
     forecastFive.innerHTML = currentHTML;
 }
 
