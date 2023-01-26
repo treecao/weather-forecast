@@ -7,6 +7,7 @@ const forecastTwo = document.querySelector('.forecast-2')
 const forecastThree = document.querySelector('.forecast-3')
 const forecastFour = document.querySelector('.forecast-4')
 const forecastFive = document.querySelector('.forecast-5')
+const fiveDayHeader = document.querySelector('.fiveday-header')
 // querySelect allows selecting both class name & ID
 
 //user submit from input box. take the string to plug into geocoding api then run our api function with the geo coding long/lat pulled into above to run the city 
@@ -43,9 +44,8 @@ function currentWeather(currentData) {
 //future conditions (forecast): weather, temp, humidity, wind speed (current time then ever 24 hours)
 function weatherForecast(forecastData) {
     console.log(forecastData)
-    let currentHTML = `
-    <h3>5-Day Forecast: <h3>
-    
+    fiveDayHeader.innerHTML = "<h3>5-Day Forecast: <h3>"
+    let currentHTML = `    
     <p>${new Date(forecastData.list[3].dt_txt).toLocaleDateString()}</p>
     <img src="http://openweathermap.org/img/wn/${forecastData.list[3].weather[0].icon}@2x.png" alt="">
     <p>Temp: ${forecastData.list[3].main.temp} °F</p>
